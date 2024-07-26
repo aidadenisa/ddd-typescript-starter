@@ -2,7 +2,7 @@ import { SQLClient } from '@/infra/db/client'
 import { AppDataSource } from '@/infra/db/postgres/setup'
 
 export class DBFactory {
-  // Can be used to create different DB connections on an env var.
+  // Can be used to create different DB connections depending on an env var.
   static createSQLDB(): SQLClient {
     let db: SQLClient
 
